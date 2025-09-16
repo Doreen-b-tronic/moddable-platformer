@@ -16,9 +16,11 @@
 
 [node name="Main" type="Node2D"]
 
-[node name="GameLogic" parent="." instance=ExtResource("3_xbkvd")]
+[node name="GameLogic" parent="." node_paths=PackedStringArray("flag_to_win") instance=ExtResource("3_xbkvd")]
 win_by_collecting_coins = true
+coins_to_win = 19
 win_by_reaching_flag = true
+flag_to_win = NodePath("../Flag")
 time_limit = 60
 lives = 5
 gravity = 680.0
